@@ -1,0 +1,15 @@
+{
+  "name": "webcomponentsjs",
+  "homepage": "https://github.com/Polymer/webcomponentsjs",
+  "version": "2.1.1",
+  "_release": "2.1.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.1.1",
+    "commit": "bddedbd7cbf52a8c2181e36d77f5151dcf14490f"
+  },
+  "_source": "https://github.com/Polymer/webcomponentsjs.git",
+  "_target": "^2.1.1",
+  "_originalSource": "webcomponentsjs",
+  "_direct": true
+}
