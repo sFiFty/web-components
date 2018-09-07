@@ -4,12 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Web Components</title>
-  <script src="bower_components/webcomponentsjs/webcomponents-loader.js"></script>
-  <link rel="import" href="bower_components/polymer/index.html" />
-  <link rel="import" href="hello-world.html" />
+  <title>Web components</title>
 </head>
+<script src="./progressbar/progressbar.js"></script>
 <body>
-  <hello-world></hello-world>
+    <h1>Web Components</h1>
+    <progress-bar></progress-bar>  
+    <script>(() => {
+      let progress = document.querySelector('progress-bar'),
+          complete = 0;
+
+      let progressInterval = setInterval(() => {
+        complete += 1;
+        console.log(complete)
+        if (complete <= 100) {
+          progress.setAttribute('complete', complete)
+        } else {
+          clearInterval(progressInterval);
+        }
+      }, 100)
+    })()</script>
 </body>
 </html>
